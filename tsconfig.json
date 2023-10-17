@@ -1,0 +1,40 @@
+{
+    "include": [
+        "src/**/*",
+    ],
+    "exclude": [
+        "node_modules",
+        "dist/**/*"
+    ],
+    "compilerOptions": {
+        "outDir": "dist",
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "module": "esnext",
+        "target": "es2018",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "resolveJsonModule": true, // 允许json导入模块
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        //   "typeRoots": [
+        //     "./types",
+        //     "./node_modules/vue/types"
+        //   ],
+        "lib": [
+            "es2017",
+            "dom"
+        ],
+        "sourceMap": true,
+        "pretty": true,
+        "baseUrl": ".",
+        "paths": {
+            "@": [
+                "./src"
+            ],
+            "@/*": [
+                "src/*"
+            ]
+        }
+    }
+}

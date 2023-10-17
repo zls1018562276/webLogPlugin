@@ -1,0 +1,31 @@
+{
+  "name": "web_log_plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development rollup -c -w",
+    "build": "cross-env NODE_ENV=prod rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.20",
+    "@babel/preset-env": "^7.22.20",
+    "@rollup/plugin-json": "^6.0.0",
+    "cross-env": "^7.0.3",
+    "livereload": "^0.9.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^2.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "dexie": "^3.2.4"
+  }
+}
